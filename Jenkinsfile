@@ -13,6 +13,10 @@ pipeline {
                     withSonarQubeEnv('sonarqube') {
                         sh '''
                         echo "SONAR HOST: $SONAR_HOST_URL"
+
+                        docker ps
+
+                        echo "Running sonar scanner..."
                        
                         docker run --rm \
                          -e SONAR_HOST_URL=$SONAR_HOST_URL \
