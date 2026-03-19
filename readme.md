@@ -7,3 +7,5 @@ Kube-bench is used to validate Kubernetes nodes and control plane components aga
 Kubescape → 📊 Cluster misconfigurations & compliance (NSA, MITRE)
 
 Kube-bench → 🛡️ Node & control-plane hardening (CIS benchmarks)
+
+![image alt](https://github.com/DMayrant/Kubescape-Kubebench/blob/main/Screenshot%202569-03-19%20at%2008.40.42.png?raw=true)
