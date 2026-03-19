@@ -7,6 +7,16 @@ pipeline {
                 checkout scm 
             }
         }
+        stage ('Kubescape Scan') {
+            steps {
+                sh '''
+                set -e 
+
+                echo 'Scanning Kubernetes cluster...'
+                kubescape scan framework nsa,mitre
+                '''
+            }
+        }
         stage ('SonarQube Scan') {
             steps {
                 script {
